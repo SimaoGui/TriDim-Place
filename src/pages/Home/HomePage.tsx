@@ -5,9 +5,9 @@ import Hero from '../../components/HeroHome/Hero'
 
 const HomePage = () => {
   return (
-    <div className='h-full w-full flex flex-col justify-between'>
+    <div className='min-h-full w-full flex flex-col justify-between'>
         <Header />
-        <main className='bg-base-100 w-full h-full flex flex-col justify-center items-center'>
+        <main className='bg-base-100 w-full h-100 flex flex-col justify-center items-center'>
           <Hero />
         </main>
         <Footer />

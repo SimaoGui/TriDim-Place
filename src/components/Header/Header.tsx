@@ -19,9 +19,10 @@ const Header = () => {
                     <li className="relative group">
                         <a className="cursor-pointer !px-4 !py-2 transition-all duration-300 ease-in-out rounded-lg 
                 flex items-center gap-1
-                text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900
-                group-hover:text-neutral-900
-                dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-white">
+                !text-neutral-100 hover:!bg-neutral-100 hover:!text-neutral-900
+                group-hover:!text-neutral-900
+                dark:!text-neutral-600 dark:hover:!bg-neutral-100 dark:hover:!text-neutral-900 dark:hover:shadow-md"
+                            onClick={toggleMenu}>
                             Produtos
                         </a>
                     </li>
@@ -31,7 +32,7 @@ const Header = () => {
                 flex items-center gap-1
                 text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900
                 group-hover:text-neutral-900
-                dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-white"
+                dark:!text-neutral-600 dark:hover:!bg-neutral-100 dark:hover:!text-neutral-900 dark:hover:shadow-md"
                             onClick={toggleMenu}>
                             Coleções
                             <svg className={`w-4 h-4 transition-transform duration-300 ${isMenuOpen ? 'rotate-180' : ''}`}
@@ -41,15 +42,15 @@ const Header = () => {
                         </a>
 
                         {isMenuOpen && (
-                            <ul className="absolute z-10 mt-2 !p-2 bg-white rounded-lg shadow-xl w-48 space-y-2
+                            <ul className="absolute z-10 !mt-1 !p-2 !bg-neutral-100 !rounded-lg shadow-xl w-48 space-y-2
                   transition-all duration-300 origin-top
                   opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
-                  dark:bg-neutral-800 dark:shadow-2xl"
+                  dark:!text-neutral-600 dark:hover:!text-neutral-900"
                                 onMouseLeave={() => setIsMenuOpen(false)}>
                                 <li>
                                     <a className="w-full block rounded-lg !px-4 !py-2 transition-colors
                       text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900
-                      dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-white">
+                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:hover:shadow-md">
                                         <div className="cursor-pointer flex items-center gap-2">
                                             <HomeIcon className="w-4 h-4" />
                                             Casa
@@ -59,7 +60,7 @@ const Header = () => {
                                 <li>
                                     <a className="w-full block rounded-lg !px-4 !py-2 transition-colors
                       text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900
-                      dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-white">
+                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:hover:shadow-md">
                                         <div className="cursor-pointer flex items-center gap-2">
                                             <ShirtIcon className="w-4 h-4" />
                                             Roupas
@@ -74,7 +75,7 @@ const Header = () => {
                         <a className="cursor-pointer !px-4 !py-2 transition-all duration-300 ease-in-out rounded-lg 
                 text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900
                 group-hover:text-neutral-900
-                dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-white">
+                dark:!text-neutral-600 dark:hover:!bg-neutral-100 dark:hover:!text-neutral-900 dark:hover:shadow-md">
                             Compras
                         </a>
                     </li>
