@@ -1,4 +1,4 @@
-import { HomeIcon, Search, ShirtIcon, ShoppingCart } from 'lucide-react'
+import { Box, HomeIcon, Search, ShirtIcon, ShoppingCart } from 'lucide-react'
 import { useState } from 'react';
 
 const Header = () => {
@@ -10,8 +10,9 @@ const Header = () => {
 
     return (
         <div className="navbar h-1/12 w-full bg-base-200 !px-6 !py-2 shadow-md">
-            <div className="navbar-start">
-                <a className="text-2xl cursor-pointer hover:scale-110 hover:text-primary transition-all ease-in">daisyUI</a>
+            <div className="navbar-start gap-2  cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
+                <Box className="w-8 h-8"/>
+                <a className="text-2xl">TriDim</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="flex flex-row items-center gap-4 text-lg">
@@ -81,7 +82,7 @@ const Header = () => {
             </div>
             <div className="navbar-end gap-4">
                 <div>
-                    <label className="input !p-2 gap-2">
+                    <label className="input !outline-none focus-within:!border-primary !p-2 gap-2">
                         <Search />
                         <input type="search" required placeholder="Search" />
                     </label>
