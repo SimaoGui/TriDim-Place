@@ -10,11 +10,11 @@ const Header = () => {
 
     return (
         <div className="navbar h-1/12 w-full bg-base-200 !px-6 !py-2 shadow-md">
-            <div className="navbar-start gap-2  cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
+            <div className="navbar-start gap-2 !w-1/4 !mx-auto cursor-pointer hover:text-primary transition-all ease-in-out duration-300 flex items-center justify-start">
                 <Box className="w-8 h-8"/>
                 <a className="text-2xl">TriDim</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-center hidden lg:flex !w-1/3 items-center justify-center">
                 <ul className="flex flex-row items-center gap-4 text-lg">
                     <li className="relative group">
                         <a className="cursor-pointer !px-4 !py-2 transition-all duration-300 ease-in-out rounded-lg 
@@ -50,7 +50,7 @@ const Header = () => {
                                 <li>
                                     <a className="w-full block rounded-lg !px-4 !py-2 transition-colors
                       text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900
-                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:hover:shadow-md">
+                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:!shadow-xs dark:hover:!shadow-md">
                                         <div className="cursor-pointer flex items-center gap-2">
                                             <HomeIcon className="w-4 h-4" />
                                             Casa
@@ -60,7 +60,7 @@ const Header = () => {
                                 <li>
                                     <a className="w-full block rounded-lg !px-4 !py-2 transition-colors
                       text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900
-                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:hover:shadow-md">
+                      dark:!text-neutral-600 dark:hover:!bg-white dark:hover:!text-neutral-900 dark:!shadow-xs dark:hover:!shadow-md">
                                         <div className="cursor-pointer flex items-center gap-2">
                                             <ShirtIcon className="w-4 h-4" />
                                             Roupas
@@ -81,7 +81,7 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div className="navbar-end gap-4">
+            <div className="navbar-end gap-4 !w-1/3 flex items-center justify-end">
                 <div>
                     <label className="input !outline-none focus-within:!border-primary !p-2 gap-2">
                         <Search />

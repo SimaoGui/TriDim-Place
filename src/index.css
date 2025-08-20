@@ -2,7 +2,6 @@
 @plugin "daisyui" {
    themes: light --default, dark --prefersdark, corporate;
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +12,36 @@
 body, #root {
   height: 100vh;
   width: 100vw;
-  background-color: oklch(100% 0 0);
+  background-color: oklch(100% 0 0); /* Usando oklch para cor de fundo */
   overflow-x: hidden;
+}
+
+@keyframes gradient-corporate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-corporate-badge {
+  /* Usando as variáveis CSS do DaisyUI para primary e accent */
+  background-image: linear-gradient(
+    to right,
+    var(--p), /* DaisyUI primary color */
+    var(--a), /* DaisyUI accent color */
+    var(--p)  /* DaisyUI primary color */
+  );
+  background-size: 200% auto;
+  animation: gradient-corporate 3s linear infinite;
+}
+
+.hero-bg-image {
+  /* Verifique se o caminho da imagem está correto em relação a este arquivo CSS */
+  /* Por exemplo: se index.css está em 'src' e a imagem em 'src/assets', './assets/heropage.png' está correto. */
+  background-image: url('./assets/heropage.png');
 }
