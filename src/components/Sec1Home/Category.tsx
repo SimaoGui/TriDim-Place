@@ -1,4 +1,4 @@
-const PLACEHOLDER_IMAGE_URL = 'https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg';
+const PLACEHOLDER_IMAGE_URL = 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg'; // Nova URL de imagem de móveis
 
 const Category = () => {
   return (
@@ -15,7 +15,7 @@ const Category = () => {
             <figure className="shadow-xs group-hover:shadow-md transition-all duration-300 ease-in-out !rounded-xl">
               <img
                 className="group-hover:scale-105 transition-all duration-300 ease-in-out !rounded-xl"
-                src={PLACEHOLDER_IMAGE_URL} // Using placeholder URL
+                src={PLACEHOLDER_IMAGE_URL} // Using the new image URL
                 alt="Móveis e Mobílias Category"
               />
             </figure>
@@ -49,7 +49,7 @@ const Category = () => {
             <figure className="shadow-xs group-hover:shadow-md transition-all duration-300 ease-in-out !rounded-xl">
               <img
                 className="group-hover:scale-105 transition-all duration-300 ease-in-out !rounded-xl"
-                src={PLACEHOLDER_IMAGE_URL} // Using placeholder URL
+                src={PLACEHOLDER_IMAGE_URL} // Using the new image URL
                 alt="Móveis e Mobílias Category"
               />
             </figure>
@@ -83,7 +83,7 @@ const Category = () => {
             <figure className="shadow-xs group-hover:shadow-md transition-all duration-300 ease-in-out !rounded-xl">
               <img
                 className="group-hover:scale-105 transition-all duration-300 ease-in-out !rounded-xl"
-                src={PLACEHOLDER_IMAGE_URL} // Using placeholder URL
+                src={PLACEHOLDER_IMAGE_URL} // Using the new image URL
                 alt="Móveis e Mobílias Category"
               />
             </figure>
@@ -117,7 +117,7 @@ const Category = () => {
             <figure className="shadow-xs group-hover:shadow-md transition-all duration-300 ease-in-out !rounded-xl">
               <img
                 className="group-hover:scale-105 transition-all duration-300 ease-in-out !rounded-xl"
-                src={PLACEHOLDER_IMAGE_URL} // Using placeholder URL
+                src={PLACEHOLDER_IMAGE_URL} // Using the new image URL
                 alt="Móveis e Mobílias Category"
               />
             </figure>
