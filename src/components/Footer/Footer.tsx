@@ -4,7 +4,7 @@ import "../../index.css";
 const Footer = () => {
   return (
     <div className="w-full h-1/5 flex flex-col justify-center items-center bg-base-200">
-      <footer className="footer w-3/5 h-full !p-6 grid-cols-4 justify-center items-start sm:footer-horizontal bg-base-200 text-base-content 2xl:w-1/2">
+      <footer className="footer w-full sm:!w-3/5 h-full !p-6 grid-cols-4 justify-center items-start sm:footer-horizontal bg-base-200 text-base-content 2xl:w-1/2">
         <aside className="!mr-4">
           <Box className="w-12 h-12"/>
           <p>

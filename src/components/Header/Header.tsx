@@ -148,7 +148,7 @@ const Header = () => {
             {/* Mobile Navigation Overlay */}
             {/* This div is always rendered, but its visibility, height, and position are controlled by dynamic classes.
                 It slides down from the top and fades in using `translate-y` and `opacity` with a transition. */}
-            <div className={`fixed top-0 left-0 w-full h-2/5 bg-base-200 z-50 flex flex-col items-center justify-center lg:hidden
+            <div className={`fixed top-0 left-0 w-full h-1/2 bg-base-200 z-50 flex flex-col items-center justify-center lg:hidden
                 transition-transform duration-500 ease-in-out
                 ${isMobileNavOpen ? 'translate-y-0 opacity-100 visible' : '-translate-y-full opacity-0 invisible pointer-events-none'}`}>
                 {/* Close button for the mobile menu */}
