@@ -148,7 +148,7 @@ const Header = () => {
             {/* Mobile Navigation Overlay */}
             {/* This div is always rendered, but its visibility, height, and position are controlled by dynamic classes.
                 It slides down from the top and fades in using `translate-y` and `opacity` with a transition. */}
-            <div className={`fixed top-0 left-0 w-full h-1/2 bg-base-200 z-50 flex flex-col items-center justify-center lg:hidden
+            <div className={`fixed top-0 left-0 w-full h-2/5 bg-base-200 z-50 flex flex-col items-center justify-center lg:hidden
                 transition-transform duration-500 ease-in-out
                 ${isMobileNavOpen ? 'translate-y-0 opacity-100 visible' : '-translate-y-full opacity-0 invisible pointer-events-none'}`}>
                 {/* Close button for the mobile menu */}
@@ -160,24 +160,24 @@ const Header = () => {
                     <X className="w-6 h-6" />
                 </button>
                 {/* Mobile Navigation Links */}
-                <ul className="flex flex-col items-center gap-6 text-2xl w-full">
-                    <li className="relative w-full text-center">
-                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-lg
-                                text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900"
+                <ul className="flex flex-col items-center gap-4 text-2xl w-full">
+                    <li className="relative w-4/5 text-center">
+                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-xl
+                                !text-neutral-600 !bg-neutral-100 hover:!text-neutral-900"
                             onClick={toggleMobileNav}> {/* Closes on item click */}
                             Produtos
                         </a>
                     </li>
-                    <li className="relative w-full text-center">
-                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-lg
-                                text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900"
+                    <li className="relative w-4/5 text-center">
+                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-xl
+                                !text-neutral-600 !bg-neutral-100 hover:!text-neutral-900"
                             onClick={toggleMobileNav}> {/* Closes on item click */}
                             Coleções
                         </a>
                     </li>
-                    <li className="relative w-full text-center">
-                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-lg
-                                text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900"
+                    <li className="relative w-4/5 text-center">
+                        <a className="block !px-4 !py-3 transition-colors duration-300 ease-in-out rounded-xl
+                                !text-neutral-600 !bg-neutral-100 hover:!text-neutral-900"
                             onClick={toggleMobileNav}> {/* Closes on item click */}
                             Compras
                         </a>
