@@ -27,7 +27,7 @@ const Footer = () => {
           <a className="cursor-pointer hover:translate-x-0.5  hover:text-primary transition-all ease-in">Contato</a>
           <a className="cursor-pointer hover:translate-x-0.5  hover:text-primary transition-all ease-in">Vagas</a>
         </nav>
-        <nav>
+        <nav className="!pl-4">
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-cols-3 grid-rows-2 gap-4">
             <Twitter className="w-6 h-6 hover:scale-110 transition-all ease-in hover:text-blue-500" />
